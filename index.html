@@ -9,7 +9,7 @@
 
 <body>
   <div id="menu">
-    <img class="logo" src="photos/icon.png" width="25" height="50">
+    <img id="logo" src="photos/icon.png" width="25" height="50">
     <ul>
       <li style="display: inline;"><a href="#about">About Me</a></li>
       <li style="display: inline;"><a href="#photos">My Photos</a></li>
@@ -207,16 +207,30 @@
         Send Carl a message!
       </p>
     </div>
-    <form action=”mailto:dianap@post.bgu.ac.il” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+    <form action="mailto:dianap@post.bgu.ac.il" method="post" enctype="text/plain">
       Your E-mail address:
       <br>
-      <input type=”text” size=”19″ name=”ContactName”>
+      <input type="text" name="mail" style="background-color: rgba(240, 248, 255, 0.559); border-style: double; border-color: #724f95; border-width: 3px;">
       <br>
       Message:
-      <br> 
-      <textarea name=”ContactCommentt” rows=”6″ cols=”20″></textarea>
       <br>
-      <input type=”submit” value=”Submit”>
+      <textarea class="emojiText" name=”ContactComment” rows=”100″ cols="40"  style="background-color: rgba(240, 248, 255, 0.559); border-style: double; border-color: #724f95; border-width: 3px;"></textarea>
+      <script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+      <script>
+        var input = document.querySelector('.emojiText');
+        var picker = new EmojiButton({
+          position: 'right-start'
+        })
+        picker.on('emoji', function(emoji){
+          input.value += emoji;
+        })
+        input.addEventListener('click', function(){
+          picker.pickerVisible ? picker.hidePicker(): picker.showPicker(input)
+        })
+      </script>
+      <br>
+      <input type="submit" value="Send" style="background-color: rgba(240, 255, 252, 0.854); border-style:solid; border-color: #724f95; border-width: 3px; font-family: 'Bree Serif', serif; color : rgb(21, 55, 100);">
+      <input type="reset" value="Reset" style="background-color: rgba(240, 255, 252, 0.854); border-style:solid; border-color: #724f95; border-width: 3px; font-family: 'Bree Serif', serif; color : rgb(21, 55, 100);"> 
     </form>
   </section>
 
