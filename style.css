@@ -1,7 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 40px;
+	background: rgb(117, 147, 192);
+	overflow:auto;
 }
+#menu a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+
+.section{
+	text-align: center;
+}
+body{
+	background-image: url("photos/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1{
+	text-align: center;
+	font-size: 125px;
+	font-weight: 600;
+	font-family: 'Niconne', cursive;
+	color: #e0d6e9;
+	text-shadow: 2px 2px 0px  #724f95,
+				3px 3px 0px #2b79ee,
+				4px 4px 0px #00c2cb,
+				5px 5px 0px #eedd45,
+				6px 6px 0px #b90a82;
+}
+
+#about{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+}
+
+.header{
+	text-align: center;
+	font-family: 'Niconne', cursive;
+	font-size: 65px;
+	font-weight: 600;
+	color: white;
+	text-shadow: 2px 2px 0px #724f95;
+}
+
+#photos{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;
+}
+
+#playlist{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;
+}
+
+#like{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;	
+}
+
+#spa{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Rubik', sans-serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;	
+}
+
+#qrcoder{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;	
+}
+
+#contact{
+	margin :150px;
+	padding : 40px;
+	border-style : double;
+	border-color : #724f95;
+	border-width : 10px;
+	font-weight : bold;
+	font-size : 16pt;
+	font-family: 'Bree Serif', serif;
+	color : rgb(21, 55, 100);
+	background-color : #e0d6e9cb;
+	text-align: center;	
+}
+
+.media{
+	align-items: center;
+	align-content:center;
+	border-style : dotted;
+	border-color : #724f95;
+	border-width : 10px;
+	width: 310px;
+	height: 310px;
+	margin: auto;
+	padding: 10px;
+}
+
+table{
+	font-family: 'Rubik', sans-serif;
+	border-color: #724f95;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+
+    /* Position the "prev button" to the left */
+	.prev {
+		left: 0;
+		border-radius: 3px 0 0 3px;
+	  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #724f95c4;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
